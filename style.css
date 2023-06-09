@@ -14,6 +14,7 @@ h1{
 #list{
     font-size: 23px;
     font-weight: bolder;
+    list-style: none;
 }
 .list__content{
     display: grid;
