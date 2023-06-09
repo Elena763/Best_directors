@@ -1,0 +1,35 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://www.desktopbackground.org/download/1920x1080/2010/08/02/57991_film-reel-backgrounds-white_4800x4800_h.jpg);
+    background-repeat: no-repeat;
+}
+#homework{
+    color: rgb(109, 12, 109);
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    color: rgba(16, 48, 78, 0.678);
+}
+#list{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.list__content{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.list__proffession{
+    color: rgb(38, 49, 95);
+}
+.list__link{
+    color: rgb(38, 49, 95);
+    justify-self: end;
+}
+.best__film{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
