@@ -1,3 +1,4 @@
+//Массив
 const directors =
 [
   {
@@ -45,10 +46,11 @@ const directors =
 ];
 
 let i = 0;
-
-
+//Метод forEach и функция обработчик массива
 directors.forEach(function (item) {
+  //Задаем переменную
   i = i + 1;
+  //Создаем новый html элемент, подставляем переменную
   let newLi = document.createElement('li');
   newLi.innerHTML =
     `<li class="list__point" id="point">
@@ -63,20 +65,20 @@ directors.forEach(function (item) {
       </div>
     </li>`;
   list.appendChild(newLi);
-
+  //Задаем переменные для html-элементов
   let director = document.getElementById("director" + `${i}`);
   let proffession = document.getElementById("proffession" + `${i}`);
   let link = document.getElementById("link" + `${i}`);
-
-  director.textContent = item.name;
+  //присваиваем знасчения из массива
+  director.textContent = `${i}` + `. ` + item.name;
   proffession.textContent = item.career;
   link.setAttribute('href',`${item.films}`);
 });
-
+//Создаем новый массив
 const topFilmsList = directors.map(function(item) {
   elem = ' ' + item.top_rated_film;
   return elem;
 });
-
+//выводим новый массив в html-элемент
 let film = document.getElementById("film");
 film.textContent = topFilmsList;
